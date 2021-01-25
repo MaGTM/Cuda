@@ -5,6 +5,8 @@ Cuda Adaprive Landing Page project for portfolio.
 Deployed on Netlify
 [https://clever-brown-e9f4db.netlify.app/](https://clever-brown-e9f4db.netlify.app/)
 
+Total Hours: `11h`
+
 
 ## Technologies
 - `HTML`
