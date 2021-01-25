@@ -1017,6 +1017,9 @@ footer .footer__content a {
     margin-bottom: 100px;
     width: 230px;
   }
+  .work__content .examples {
+    height: 568.188px;
+  }
   .work__content .examples .item img {
     width: 70%;
   }
@@ -1122,6 +1125,9 @@ footer .footer__content a {
     width: 80px;
     height: 30px;
   }
+  .work__content .examples {
+    height: 439.438px;
+  }
   .work__content .examples .item img {
     width: 70%;
   }
@@ -1160,13 +1166,13 @@ footer .footer__content a {
     margin-top: 40px;
   }
   .contact__content form .form__top__input input {
-    width: 300px;
+    width: 280px;
   }
   .contact__content form .form__textarea {
-    width: 300px;
+    width: 280px;
   }
   .contact__content form .form__textarea textarea {
-    width: 300px;
+    width: 280px;
   }
   footer .footer__content a {
     font-size: 10px;

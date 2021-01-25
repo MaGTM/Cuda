@@ -791,6 +791,7 @@ footer {
     .work {
         &__content {
             .examples {
+                height: 568.188px;
                 .item {
                     img {
                         width: 70%;
@@ -907,6 +908,7 @@ footer {
                 }
             }
             .examples {
+                height: 439.438px;
                 .item {
                     img {
                         width: 70%;
@@ -947,15 +949,15 @@ footer {
                     &__input {
                         margin-top: 40px;
                         input {
-                            width: 300px;
+                            width: 280px;
                         }
                     }
                 }
 
                 .form__textarea {
-                    width: 300px;
+                    width: 280px;
                     textarea {
-                        width: 300px;
+                        width: 280px;
                     }
                 }
             }
