@@ -431,4 +431,172 @@ header .header__content .btn:hover {
   left: -50%;
   top: -50%;
 }
+
+.work {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #393939;
+  background: #FFDD99;
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 110px;
+}
+
+.work__top {
+  margin-top: 100px;
+}
+
+.work__top h1 {
+  position: relative;
+}
+
+.work__top h1:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 87px;
+  height: 4px;
+  background: #FFDD99;
+  -webkit-filter: brightness(0.75);
+          filter: brightness(0.75);
+}
+
+.work__top p {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.work__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.work__content .btns {
+  margin-top: 40px;
+  margin-bottom: 62px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 420px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.work__content .btns button {
+  padding: 5px 28px 5px 28px;
+  background: #FFDD99;
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+  border: none;
+}
+
+.work__content .btns button:hover {
+  background: #fff;
+}
+
+.work__content .btns button.active {
+  background: #fff;
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
+}
+
+.work__content .btns button:focus {
+  outline: none;
+}
+
+.work__content .btns button:disabled {
+  background: #fff;
+  color: #393939;
+}
+
+.work__content .examples {
+  width: 1100px;
+  height: 820px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s;
+}
+
+.work__content .examples .item {
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  opacity: 1;
+}
+
+.work__content .examples .item img {
+  margin-bottom: 25px;
+  margin-top: 40px;
+}
+
+.work__content .load {
+  width: 293px;
+  height: 70px;
+  color: #fff;
+  background: #17C2A4;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-bottom: 4px #13A58B solid;
+  -webkit-transition: -webkit-filter 0.2s;
+  transition: -webkit-filter 0.2s;
+  transition: filter 0.2s;
+  transition: filter 0.2s, -webkit-filter 0.2s;
+  margin-top: 120px;
+}
+
+.work__content .load:hover {
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+}
 /*# sourceMappingURL=style.css.map */

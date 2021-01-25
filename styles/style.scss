@@ -297,3 +297,121 @@ header {
         }
     }
 }
+
+.work {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color:#393939;
+    background: #FFDD99;
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 110px;
+
+    &__top {
+        margin-top: 100px;
+        h1 {
+            position: relative;
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 87px;
+                height: 4px;
+                background:#FFDD99;
+                filter: brightness(0.75);
+            }
+        }
+
+        p {
+            margin-top: 15px;
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .btns {
+            margin-top: 40px;
+            margin-bottom: 62px;
+            user-select: none;
+            width: 420px;
+            display: flex;
+            justify-content: space-between;
+            button {
+                padding: 5px 28px 5px 28px;
+                background: #FFDD99;
+                filter: brightness(0.8);
+                border-radius: 4px;
+                cursor: pointer;
+                transition: background 0.2s;
+                border: none;
+
+                &:hover {
+                    background: #fff;
+                }
+
+                &.active {
+                    background: #fff;
+                    filter: brightness(1);
+                }
+
+                &:focus {
+                    outline: none;
+                }
+
+                &:disabled {
+                    background: #fff;
+                    color: #393939;
+                }
+            }
+        }
+
+        .examples {
+            width: 1100px;
+            height: 820px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            overflow: hidden;
+            transition: height 0.5s;
+
+            .item {
+                transition: opacity 0.3s;
+                opacity: 1;
+                img {
+                    margin-bottom: 25px;
+                    margin-top: 40px;
+                }
+            }
+        }
+
+        .load {
+            width: 293px;
+            height: 70px;
+            color: #fff;
+            background: #17C2A4;
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+            border-bottom: 4px #13A58B solid;
+            transition: filter 0.2s;
+            margin-top: 120px;
+
+            &:hover {
+                filter: brightness(0.7)
+            }
+        }
+    }
+}
