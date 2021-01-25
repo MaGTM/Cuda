@@ -741,7 +741,15 @@ footer {
 
 @media (min-width: 768px) and (max-width: 979px) {
     .content {
-        width: 768px;
+        width: 740px;
+    }
+
+    header {
+        .header__content {
+            h1 {
+                width: 740px;
+            }
+        }
     }
 
     .services {
@@ -749,6 +757,78 @@ footer {
         &__content {
             width: 600px;
             flex-wrap: wrap;
+        }
+    }
+
+    .team {
+        height: 1400px;
+        &__content {
+            width: 500px;
+            flex-wrap: wrap;
+
+            &__item {
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+    .skills {
+        height: 900px;
+        &__content {
+            width: 500px;
+            flex-wrap: wrap;
+            height: 600px;
+
+            &__item {
+                width: 200px;
+            }
+        }
+    }
+
+    .work {
+        &__top {
+            p {
+                width: 740px;
+            }
+        }
+        &__content {
+            .examples {
+                .item {
+                    width: 325px;
+                    img {
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+
+    .feedback {
+        height: 1200px;
+        &__content {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+    }
+
+    .contact {
+        &__content {
+            form {
+                .form__top {
+                    &__input {
+                        input {
+                            width: 340px;
+                        }
+                    }
+                }
+                .form__textarea {
+                    textarea {
+                        width: 740px;
+                    }
+                }
+            }
         }
     }
 }

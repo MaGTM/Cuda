@@ -983,7 +983,10 @@ footer .footer__content a {
 
 @media (min-width: 768px) and (max-width: 979px) {
   .content {
-    width: 768px;
+    width: 740px;
+  }
+  header .header__content h1 {
+    width: 740px;
   }
   .services {
     height: 1000px;
@@ -992,6 +995,61 @@ footer .footer__content a {
     width: 600px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .team {
+    height: 1400px;
+  }
+  .team__content {
+    width: 500px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .team__content__item {
+    margin-bottom: 50px;
+  }
+  .skills {
+    height: 900px;
+  }
+  .skills__content {
+    width: 500px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 600px;
+  }
+  .skills__content__item {
+    width: 200px;
+  }
+  .work__top p {
+    width: 740px;
+  }
+  .work__content .examples .item {
+    width: 325px;
+  }
+  .work__content .examples .item img {
+    width: 70%;
+  }
+  .feedback {
+    height: 1200px;
+  }
+  .feedback__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .contact__content form .form__top__input input {
+    width: 340px;
+  }
+  .contact__content form .form__textarea textarea {
+    width: 740px;
   }
 }
 
