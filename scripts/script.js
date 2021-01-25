@@ -170,3 +170,21 @@ form.addEventListener("submit", (e) => {
         error.style.opacity = 0
     }, 2000)
 })
+
+// Burger Menu
+let menuContainer = document.querySelector("#menu"),
+    burgerBtn = document.querySelector(".burger")
+
+let burgerMenuToggle = (status) => {
+    console.log();
+    switch (status) {
+        case false:
+            menuContainer.style.height = String(Number(getComputedStyle(document.querySelector('header')).height.split("px")[0]) - 60 - 50) + "px"
+            burgerBtn.setAttribute("onclick", "burgerMenuToggle(true)")
+            break
+        case true:
+            menuContainer.style.height = 0
+            burgerBtn.setAttribute("onclick", "burgerMenuToggle(false)")
+            break
+    }
+}

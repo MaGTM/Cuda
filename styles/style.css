@@ -56,6 +56,11 @@ header .header__top__menu {
           user-select: none;
 }
 
+header .header__top__menu .burger {
+  fill: white;
+  display: none;
+}
+
 header .header__top__menu ul {
   list-style: none;
   text-transform: uppercase;
@@ -976,12 +981,57 @@ footer .footer__content a {
   }
 }
 
+@media (min-width: 768px) and (max-width: 979px) {
+  .content {
+    width: 768px;
+  }
+  .services {
+    height: 1000px;
+  }
+  .services__content {
+    width: 600px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 @media (min-width: 480px) and (max-width: 767px) {
   .content {
     width: 460px;
   }
+  header .header__top {
+    position: relative;
+  }
+  header .header__top__menu .burger {
+    display: block;
+    cursor: pointer;
+  }
   header .header__top__menu ul {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    overflow: hidden;
+    font-size: 20px;
+    background: #87509c;
+    -webkit-transition: height 0.3s;
+    transition: height 0.3s;
   }
   header .header__content {
     margin-top: 80px;
@@ -1056,8 +1106,39 @@ footer .footer__content a {
   .content {
     width: 300px;
   }
+  header .header__top {
+    position: relative;
+  }
+  header .header__top__menu .burger {
+    display: block;
+    cursor: pointer;
+  }
   header .header__top__menu ul {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    overflow: hidden;
+    font-size: 20px;
+    background: #87509c;
+    -webkit-transition: height 0.3s;
+    transition: height 0.3s;
   }
   header .header__content {
     margin-top: 50px;

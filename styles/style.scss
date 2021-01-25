@@ -35,6 +35,12 @@ header {
 
         &__menu {
             user-select: none;
+
+            .burger {
+                fill: white;
+                display: none;
+            }
+
             ul {
                 list-style: none;
                 text-transform: uppercase;
@@ -734,7 +740,17 @@ footer {
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
+    .content {
+        width: 768px;
+    }
 
+    .services {
+        height: 1000px;
+        &__content {
+            width: 600px;
+            flex-wrap: wrap;
+        }
+    }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
@@ -744,9 +760,27 @@ footer {
 
     header {
         .header__top {
+            position: relative;
             &__menu {
+                .burger {
+                    display: block;
+                    cursor: pointer;
+                }
                 ul {
-                    display: none;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    width: 100%;
+                    height: 0;
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    overflow: hidden;
+                    font-size: 20px;
+                    background: #87509c;
+                    transition: height 0.3s;
                 }
             }
         }
@@ -844,9 +878,27 @@ footer {
 
     header {
         .header__top {
+            position: relative;
             &__menu {
+                .burger {
+                    display: block;
+                    cursor: pointer;
+                }
                 ul {
-                    display: none;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    width: 100%;
+                    height: 0;
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    overflow: hidden;
+                    font-size: 20px;
+                    background: #87509c;
+                    transition: height 0.3s;
                 }
             }
         }
