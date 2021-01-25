@@ -92,7 +92,7 @@ let loadMoreWorks = (elem, status) => {
         container = document.querySelector('.examples');
     switch (status) {
         case false:
-            if(window.screen.width < 768) {
+            if (window.screen.width < 768) {
                 container.style.height = String(Number(getComputedStyle(all[0]).height.split("px")[0]) * all.length) + "px"
             } else {
                 container.style.height = String(Number(getComputedStyle(all[0]).height.split("px")[0]) * Math.ceil(all.length / 2)) + "px"
@@ -101,7 +101,7 @@ let loadMoreWorks = (elem, status) => {
             elem.setAttribute("onclick", "loadMoreWorks(this, true)")
             break
         case true:
-            container.style.height = String(Number(getComputedStyle(all[0]).height.split("px")[0])*2) + "px"
+            container.style.height = String(Number(getComputedStyle(all[0]).height.split("px")[0]) * 2) + "px"
             elem.innerHTML = "LOAD MORE PROJECTS"
             elem.setAttribute("onclick", "loadMoreWorks(this, false)")
             break
@@ -134,19 +134,19 @@ for (let i = 0; i < inputs.length; i++) {
     inputs[i].addEventListener("blur", (e) => {
         switch (e.target.name) {
             case "firstname":
-                if(inputs[i].value) {
+                if (inputs[i].value) {
                     break
                 }
                 firstnameLabel.style.top = "50%"
                 break
             case "email":
-                if(inputs[i].value) {
+                if (inputs[i].value) {
                     break
                 }
                 emailLabel.style.top = "50%"
                 break
             case "message":
-                if(inputs[i].value) {
+                if (inputs[i].value) {
                     break
                 }
                 messageLabel.style.top = "10px"
