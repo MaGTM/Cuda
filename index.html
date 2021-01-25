@@ -7,7 +7,8 @@
     <title>Cuda</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,300&display=swap"
         rel="stylesheet">
 </head>
 
@@ -22,10 +23,9 @@
             </a>
             <div class="header__top__menu">
                 <ul>
-                    <li onclick="scrollFun('header')">home</li>
                     <li onclick="scrollFun('.services')">about</li>
                     <li onclick="scrollFun('.work')">work</li>
-                    <li onclick="scrollFun('.blog')">blog</li>
+                    <li onclick="scrollFun('.feedback')">feedback</li>
                     <li onclick="scrollFun('.contact')">contact</li>
                 </ul>
             </div>
@@ -35,7 +35,7 @@
                 Hi there! We are the new kids on the block<br>
                 and we build awesome websites and mobile apps.
             </h1>
-            <div class="btn">WORK WITH US!</div>
+            <div class="btn" onclick="scrollFun('.contact')">WORK WITH US!</div>
         </div>
     </header>
     <section class="services">
@@ -423,28 +423,28 @@
             <div class="skills__content__item">
                 <p>
                     90%
-                    <img src="assets/skills1.png" alt="">              
+                    <img src="assets/skills1.png" alt="">
                 </p>
                 <h2>WEB DESIGN</h2>
             </div>
             <div class="skills__content__item">
                 <p>
                     75%
-                    <img src="assets/skills2.png" alt="">              
+                    <img src="assets/skills2.png" alt="">
                 </p>
                 <h2>HTML/CSS</h2>
             </div>
             <div class="skills__content__item">
                 <p>
                     70%
-                    <img src="assets/skills3.png" alt="">              
+                    <img src="assets/skills3.png" alt="">
                 </p>
                 <h2>GRAPHIC DESIGN</h2>
             </div>
             <div class="skills__content__item">
                 <p>
                     85%
-                    <img src="assets/skills4.png" alt="">              
+                    <img src="assets/skills4.png" alt="">
                 </p>
                 <h2>UI / UX</h2>
             </div>
@@ -502,6 +502,102 @@
             </div>
         </div>
     </section>
+    <section class="feedback">
+        <div class="feedback__top content">
+            <h1>WTHAT PEOPLE SAY ABOUT US</h1>
+            <p>Our clients love us!</p>
+        </div>
+        <div class="feedback__content content">
+            <div class="feedback__content__item">
+                <div class="avatar"></div>
+                <div class="text">
+                    <p>
+                        “Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl
+                        scelerisque.”
+                    </p>
+                    <div class="title">
+                        <h2>DELORES MURPHY</h2>
+                        <p>CEO of Pinterest</p>
+                    </div>
+                </div>
+            </div>
+            <div class="feedback__content__item">
+                <div class="avatar"></div>
+                <div class="text">
+                    <p>
+                        “Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”
+                    </p>
+                    <div class="title">
+                        <h2>JUSTIN GREEN</h2>
+                        <p>Founder of Instagramm</p>
+                    </div>
+                </div>
+            </div>
+            <div class="feedback__content__item">
+                <div class="avatar"></div>
+                <div class="text">
+                    <p>
+                        “Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio obcaecati ipsum repellendus sit
+                        eum molestiae.”
+                    </p>
+                    <div class="title">
+                        <h2>MARY HOLT</h2>
+                        <p>Lead designer at Behance</p>
+                    </div>
+                </div>
+            </div>
+            <div class="feedback__content__item">
+                <div class="avatar"></div>
+                <div class="text">
+                    <p>
+                        “Phasellus non purus vel arcu tempor commodo. Fusce semper, purus vel luctus molestie, risus sem
+                        cursus neque.”
+                    </p>
+                    <div class="title">
+                        <h2>NANCY HINES</h2>
+                        <p>Co-founder of Shazam</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="contact__top content">
+            <h1>GET IN TOUCH</h1>
+            <p>1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</p>
+        </div>
+        <div class="contact__content content">
+            <form id="form">
+                <div class="form__top">
+                    <div class="form__top__input">
+                        <label for="firstname" id="firstname__label">Your name<span>*</span></label>
+                        <input class="input" id="firstname" name="firstname" type="text" required>
+                    </div>
+                    <div class="form__top__input">
+                        <label for="email" id="email__label">Your email<span>*</span></label>
+                        <input class="input" id="email" name="email" type="text" required>
+                    </div>
+                </div>
+                <div class="form__textarea">
+                    <label for="message" id="message__label">Your message<span>*</span></label>
+                    <textarea class="input" name="message" id="message"></textarea>
+                </div>
+                <span id="error">This is just visuals, nobody recieved your email ;)</span>
+                <button type="submit" id="form__button">SEND MESSAGE</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer__content content">
+            <a href="https://www.facebook.com/">Facebook</a>
+            <a href="https://twitter.com/">Twitter</a>
+            <a href="https://www.google.ru/">Google+</a>
+            <a href="https://www.linkedin.cn/">LinkedIn</a>
+            <a href="https://www.behance.net/">Behance</a>
+            <a href="https://dribbble.com/">Dribbble</a>
+            <a href="https://github.com/">GitHub</a>
+        </div>
+    </footer>
 
     <!-- JS Scripts -->
     <script src="/scripts/script.js"></script>

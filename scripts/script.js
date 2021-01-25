@@ -1,3 +1,4 @@
+// Scroll to element Script
 let scrollFun = (selector) => {
     let selectedElem = document.querySelector(selector)
     scrollTo({
@@ -6,6 +7,7 @@ let scrollFun = (selector) => {
     })
 }
 
+// Works Filter
 let workFilterSelect = (elem) => {
     let btns = document.querySelectorAll(".work__btns__item")
 
@@ -84,23 +86,87 @@ let workFilterSelect = (elem) => {
     }
 }
 
+// Load More Works Button
 let loadMoreWorks = (elem, status) => {
     let all = document.querySelectorAll(".all"),
-        web = document.querySelectorAll(".web"),
-        apps = document.querySelectorAll(".apps"),
-        icons = document.querySelectorAll(".icons__work"),
-        container = document.querySelector('.examples')
-
+        container = document.querySelector('.examples');
     switch (status) {
         case false:
-            container.style.height = String(410 * Math.ceil(all.length / 2)) + "px"
+            if(window.screen.width < 768) {
+                container.style.height = String(Number(getComputedStyle(all[0]).height.split("px")[0]) * all.length) + "px"
+            } else {
+                container.style.height = String(Number(getComputedStyle(all[0]).height.split("px")[0]) * Math.ceil(all.length / 2)) + "px"
+            }
             elem.innerHTML = "CLOSE PROJECTS"
             elem.setAttribute("onclick", "loadMoreWorks(this, true)")
             break
         case true:
-            container.style.height = String(820) + "px"
+            container.style.height = String(Number(getComputedStyle(all[0]).height.split("px")[0])*2) + "px"
             elem.innerHTML = "LOAD MORE PROJECTS"
             elem.setAttribute("onclick", "loadMoreWorks(this, false)")
             break
     }
 }
+
+// Contact Form labels animation
+let inputs = document.querySelectorAll(".input"),
+    firstnameLabel = document.querySelector("#firstname__label"),
+    emailLabel = document.querySelector("#email__label"),
+    messageLabel = document.querySelector("#message__label");
+
+for (let i = 0; i < inputs.length; i++) {
+    inputs[i].addEventListener("focus", (e) => {
+        switch (e.target.name) {
+            case "firstname":
+                firstnameLabel.style.top = "-20px"
+                break
+            case "email":
+                emailLabel.style.top = "-20px"
+                break
+            case "message":
+                messageLabel.style.top = "-30px"
+                break
+        }
+    })
+}
+
+for (let i = 0; i < inputs.length; i++) {
+    inputs[i].addEventListener("blur", (e) => {
+        switch (e.target.name) {
+            case "firstname":
+                if(inputs[i].value) {
+                    break
+                }
+                firstnameLabel.style.top = "50%"
+                break
+            case "email":
+                if(inputs[i].value) {
+                    break
+                }
+                emailLabel.style.top = "50%"
+                break
+            case "message":
+                if(inputs[i].value) {
+                    break
+                }
+                messageLabel.style.top = "10px"
+                break
+        }
+    })
+}
+
+// Form Submitting
+let form = document.querySelector("#form"),
+    error = document.querySelector("#error"),
+    button = document.querySelector("#form__button");
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault()
+    button.disabled = true
+    error.style.opacity = 1
+
+    setTimeout(() => {
+        button.disabled = false
+        error.style.opacity = 0
+    }, 2000)
+})
